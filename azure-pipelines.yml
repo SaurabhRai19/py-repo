@@ -59,4 +59,10 @@ stages:
     - upload: $(Build.ArtifactStagingDirectory)/build.zip
       displayName: 'Upload package'
       artifact: drop
-
+    - task: AzureWebApp@1
+      displayName: 'Azure Web App Deploy'
+      inputs:
+        azureSubscription: $(azureServiceConnectionId)
+        appType: webAppLinux
+        appName: $(webAppName)
+        package: $(System.ArtifactsDirectory)/**/*.zip
