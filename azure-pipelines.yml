@@ -8,10 +8,10 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '33d7d897-1b08-4471-adf1-7a0e0b245103'
+  azureServiceConnectionId: 'SampleRG1-Connection'
 
   # Web app name
-  webAppName: 'python-cicd-183'
+  webAppName: 'samplepythonapp'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
