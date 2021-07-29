@@ -11,7 +11,7 @@ variables:
   azureServiceConnectionId: 'SampleRG1-Connection'
 
   # Web app name
-  webAppName: 'samplepythonapp'
+  webAppName: 'samplepython'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
